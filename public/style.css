@@ -597,6 +597,11 @@ video {
   justify-content: center;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 /* Your Awesome Styles */
 
 /* * {
