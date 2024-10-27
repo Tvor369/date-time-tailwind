@@ -16,21 +16,30 @@
     <main>
   
         <!-- Time -->
-        <time class="time container mx-auto block grid lg:grid-cols-4 md:grid-cols-2">
-                <data class="hours text-7xl">HH</data> :
-                <data class="minutes text-7xl">MM</data> :
-                <data class="minutes text-7xl">MM</data> :
-                <data class="seconds text-7xl">SS</data>
-                <data class="amOrPM text-7xl">AM/PM</data>
+        <time class="time container mx-auto block grid lg:grid-cols-6 md:grid-cols-2 text-center">
+                <!-- Hours and Minutes -->
+                <data class="hours text-9xl">HH</data>
+                <data class="colon1 text-9xl"> : </data>
+                <data class="minutes text-9xl">MM</data>
+                <!-- Seconds and AM/PM -->
+                  <data class="colon2 text-3xl"> : </data>
+                  <data class="seconds text-3xl">SS</data>
+                  <data class="amOrPM text-1xl">AM/PM</data>
+                
             </time>
       
+        <!-- Day -->
+        <time class="day container mx-auto block grid lg:grid-cols-4 md:grid-cols-2">
+          <data class="dayOfWeek text-5xl">SMTWTFS</data>
+        </time>
           
         <!-- Date -->
-        <time class="date container mx-auto block grid lg:grid-cols-4 md:grid-cols-2">
+        <time class="date container mx-auto block grid lg:grid-cols-4 md:grid-cols-2 text-center">
+          <!-- <data class="dayOfWeek text-5xl">SMTWTFS</data> -->
           <data class="month text-7xl">Month</data>
-          <data class="dayOfMonth text-7xl">00</data>,
-          <data class="year text-7xl">0000</data> -
-          <data class="dayOfWeek text-7xl">SMTWTFS</data>
+          <data class="dayOfMonth text-7xl">00</data>
+          <data class="comma text-7xl">, </data>
+          <data class="year text-5xl">0000</data> 
         </time>
       
       </main>

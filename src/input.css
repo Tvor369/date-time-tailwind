@@ -4,9 +4,9 @@
 @tailwind utilities;
 
 /* Your Awesome Styles */
-/* * {
+* {
     outline: 1px dotted gray;
-} */
+}
 
 body {
     background-color: thistle;
