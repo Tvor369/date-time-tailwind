@@ -25,7 +25,7 @@ const theClockApp = () => {
     // Get AM or PM
     const gotAmOrPM = gotHours >= 12 ? 'PM' : 'AM';
     // Get day or night emoji 🌞🌜 
-    const gotDayOrNight = (gotHours >= 7 && gotHours < 15) ? '🌞' : '🌜' ; // I defined day to be between 7AM and 7PM
+    const gotDayOrNight = (gotHours >= 7 && gotHours < 19) ? '🌞' : '🌜' ; // I defined day to be between 7AM and 7PM
     // Get 12 hour format
     gotHours = gotHours % 12 || 12;
     // Optionally, append zero to single digit hours
