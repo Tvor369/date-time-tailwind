@@ -41,6 +41,12 @@ const allTheMonths = [
   const gotYear = dateNow.getFullYear();
   // Get current day of the week
   const gotDayOfWeek = dateNow.getDay();
+
+  // Optionally, append suffix to day of the month
+  if(gotDayOfMonth == 1 || gotDayOfMonth == 21 || gotDayOfMonth == 31) {gotDayOfMonth = gotDayOfMonth + "st";}
+  else if(gotDayOfMonth == 2 || gotDayOfMonth == 22) {gotDayOfMonth = gotDayOfMonth + "nd";}
+  else if(gotDayOfMonth == 3 || gotDayOfMonth == 23) {gotDayOfMonth = gotDayOfMonth + "rd";}
+  else {gotDayOfMonth = gotDayOfMonth + "th";}
   
   // Check-Check: Is the data correct? 
   console.log(gotMonth, gotDayOfMonth, gotYear, gotDayOfWeek);
