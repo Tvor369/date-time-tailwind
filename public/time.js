@@ -24,6 +24,8 @@ const theClockApp = () => {
     ************/
     // Get AM or PM
     const gotAmOrPM = gotHours >= 12 ? 'PM' : 'AM';
+    // Get day or night emoji
+    const gotDayOrNight = gotHours < 7  && gotHours >= 14 ? '🌜' : '🌞';
     // Get 12 hour format
     gotHours = gotHours % 12 || 12;
     // Optionally, append zero to single digit hours
@@ -32,6 +34,8 @@ const theClockApp = () => {
     gotMinutes = gotMinutes < 10 ? `0${gotMinutes}` : gotMinutes;
     // Optionally, append zero to single digit seconds
     gotSeconds = gotSeconds < 10 ? `0${gotSeconds}` : gotSeconds;
+
+    
     
     /************
     Get DOM Elements
@@ -44,6 +48,8 @@ const theClockApp = () => {
     const seconds = document.querySelector(".seconds");
     // Get AM or PM
     const amOrPM = document.querySelector('.amOrPM');
+    // Get day or night emoji
+    const dayOrNight = document.querySelector('.dayOrNight');
     
     /************
     Set DOM Elements
@@ -56,6 +62,8 @@ const theClockApp = () => {
     seconds.innerText = gotSeconds;
     // Set AM or PM
     amOrPM.innerText = gotAmOrPM;
+    // Set day or nigh emoji
+    dayOrNight.innerText = gotDayOrNight;
       
     }
     

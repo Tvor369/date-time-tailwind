@@ -16,28 +16,29 @@
     <main>
   
         <!-- Time -->
-        <time class="time container mx-auto block grid lg:grid-cols-6 md:grid-cols-2 text-center">
+        <time class="time container mx-auto block grid grid-cols-[140px_70px_140px_30px_60px_70px_auto] font-mono">
                 <!-- Hours and Minutes -->
-                <data class="hours text-9xl">HH</data>
-                <data class="colon1 text-9xl"> : </data>
-                <data class="minutes text-9xl">MM</data>
+                <data class="hours text-9xl text-left">HH</data>
+                <data class="colon1 text-9xl text-left">:</data>
+                <data class="minutes text-9xl text-left">MM</data>
                 <!-- Seconds and AM/PM -->
-                  <data class="colon2 text-3xl"> : </data>
-                  <data class="seconds text-3xl">SS</data>
-                  <data class="amOrPM text-1xl">AM/PM</data>
-                
+                <data class="colon2 text-5xl text-center py-3">:</data>
+                <data class="seconds text-5xl text-center py-3">SS</data>
+                <data class="amOrPM text-5xl text-center py-3">AM/PM</data>
+                <!-- Day/Night Emoji -->
+                <data class="dayOrNight text-9xl text-center">Emoji</data>
             </time>
       
         <!-- Day -->
-        <time class="day container mx-auto block grid lg:grid-cols-4 md:grid-cols-2">
+        <time class="day container mx-auto block grid grid-cols-[300px_auto] grid-rows-[60px]">
           <data class="dayOfWeek text-5xl">SMTWTFS</data>
         </time>
           
         <!-- Date -->
-        <time class="date container mx-auto block grid lg:grid-cols-4 md:grid-cols-2 text-center">
-          <!-- <data class="dayOfWeek text-5xl">SMTWTFS</data> -->
+        <time class="date container mx-auto block grid grid-cols-[auto_180px_40px_120px] font-mono ">
+          <!-- <data class="dayOfWeek text-5xl">SMTWTFS</data> lg:grid-cols-4 md:grid-cols-2-->
           <data class="month text-7xl">Month</data>
-          <data class="dayOfMonth text-7xl">00</data>
+          <data class="dayOfMonth text-7xl text-right">00</data>
           <data class="comma text-7xl">, </data>
           <data class="year text-5xl">0000</data> 
         </time>
