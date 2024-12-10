@@ -657,7 +657,17 @@ video {
 
 body {
   background-color: thistle;
+  /* background-size: cover;
+  background-position: center center; */
 }
+
+/* .clock {
+  background-color: rgba(134, 134, 134, 0.227);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+} */
 
 @media (min-width: 1024px) {
   .lg\:grid-cols-4 {
